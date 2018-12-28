@@ -5,6 +5,9 @@ class CGPGene():
 	def __init__(self, num_in, num_mid, num_out):
 		print("Creating CGPGene")
 		self.gene = library.GP_CGP_alloc(num_in, num_mid, num_out).contents
+		# Sould also randomize it:
+		print("Randomizing CGPGene")
+		library.GP_CGP_randomize(self.gene)
 
 	def evaluate(self, inputs):
 		print("Evaluating")

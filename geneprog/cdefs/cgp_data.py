@@ -14,3 +14,4 @@ def load(lib):
 	#lib.GetImageFromMagickWand.restype = c_void_p
 	lib.GP_CGP_alloc.argtypes = [ctypes.c_uint, ctypes.c_uint, ctypes.c_uint]
 	lib.GP_CGP_alloc.restype = ctypes.POINTER(GP_Gene)
+	lib.GP_CGP_randomize.argtypes = [ctypes.POINTER(GP_Gene)]
