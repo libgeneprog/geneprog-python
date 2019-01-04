@@ -14,10 +14,16 @@
             "type": "shell",
             "command": "python3 -m unittest discover -s tests -p \"*_tests.py\"",
             "problemMatcher": [],
-                        "group": {
-                                "kind": "build",
-                                "isDefault": true
-                        }
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "lint",
+            "type": "shell",
+            "command": "pycodestyle --show-source --show-pep8 geneprog",
+            "problemMatcher": []
         }
     ]
 }
